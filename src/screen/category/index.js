@@ -10,6 +10,7 @@ import {
   ScrollView,
   TextInput,
 } from 'react-native';
+import {moderateScale, scale, verticalScale} from 'react-native-size-matters';
 import Box from '../../compoents/Box';
 import CategoryListItem from '../../compoents/categoryListItem';
 import styles from './styles';
@@ -19,15 +20,29 @@ const subCategory = {
       brandName: 'Aashirvaad Aata',
       name: 'shabarmati ',
       Price: '50/kg',
-      quantity: '25kg quantity in package',
-      profile_image: require('../../atom/icon/aata.jpg'),
+      quantity: '25kg quantity in pack',
+      profile_image: require('../../atom/icon/aata1.jpg'),
     },
     {
       brandName: 'Aashirvaad Aata',
       name: 'Manna Atta ',
       Price: '80/kg',
-      quantity: '50kg quantity in package',
-      profile_image: require('../../atom/icon/aata.jpg'),
+      quantity: '50kg quantity in pack',
+      profile_image: require('../../atom/icon/aata2.jpg'),
+    },
+    {
+      brandName: 'Aashirvaad Aata',
+      name: 'Manna Atta ',
+      Price: '80/kg',
+      quantity: '50kg quantity in pack',
+      profile_image: require('../../atom/icon/aata3.jpg'),
+    },
+    {
+      brandName: 'Aashirvaad Aata',
+      name: 'Manna Atta ',
+      Price: '80/kg',
+      quantity: '50kg quantity in pack',
+      profile_image: require('../../atom/icon/aata2.jpg'),
     },
   ],
   2: [
@@ -35,15 +50,43 @@ const subCategory = {
       brandName: 'Aashirvaad Aata',
       name: 'shabarmati ',
       Price: '50/kg',
-      quantity: '25kg quantity in package',
-      profile_image: require('../../atom/icon/aata.jpg'),
+      quantity: '25kg quantity in pack',
+      profile_image: require('../../atom/icon/rice3.jpg'),
     },
     {
       brandName: 'Aashirvaad Aata',
       name: 'Manna Atta ',
       Price: '80/kg',
-      quantity: '50kg quantity in package',
-      profile_image: require('../../atom/icon/aata.jpg'),
+      quantity: '25kg quantity in pack',
+      profile_image: require('../../atom/icon/rice4.jpg'),
+    },
+    {
+      brandName: 'Aashirvaad Aata',
+      name: 'shabarmati ',
+      Price: '50/kg',
+      quantity: '25kg quantity in pack',
+      profile_image: require('../../atom/icon/rice.png'),
+    },
+    {
+      brandName: 'Aashirvaad Aata',
+      name: 'shabarmati ',
+      Price: '50/kg',
+      quantity: '25kg quantity in pack',
+      profile_image: require('../../atom/icon/rice.jpg'),
+    },
+    {
+      brandName: 'Aashirvaad Aata',
+      name: 'shabarmati ',
+      Price: '50/kg',
+      quantity: '25kg quantity in pack',
+      profile_image: require('../../atom/icon/oil.png'),
+    },
+    {
+      brandName: 'Aashirvaad Aata',
+      name: 'shabarmati ',
+      Price: '50/kg',
+      quantity: '25kg quantity in pack',
+      profile_image: require('../../atom/icon/milk.jpg'),
     },
   ],
 };
@@ -85,14 +128,26 @@ const Category = ({route}) => {
             <View style={styles.searchContainer}>
               <TextInput
                 style={styles.searchBar}
-                placeholder="Search..."
+
                 // Add any onChangeText or onSubmitEditing props as needed
               />
               <TouchableOpacity>
-                <Image
-                  source={require('../../atom/icon/search-img.png')}
-                  style={styles.searchIcon}
-                />
+                <View
+                  style={{
+                    height: verticalScale(40),
+                    width: scale(40),
+                    borderRadius: moderateScale(20),
+                    backgroundColor: 'grey',
+                    justifyContent: 'center',
+                    alignSelf: 'center',
+                    alignItems: 'center',
+                    marginLeft: scale(120),
+                  }}>
+                  <Image
+                    source={require('../../atom/icon/search-img.png')}
+                    style={styles.searchIcon}
+                  />
+                </View>
               </TouchableOpacity>
             </View>
           </TouchableOpacity>

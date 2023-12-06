@@ -11,13 +11,14 @@ const styles = StyleSheet.create({
     width: scale(45),
     height: verticalScale(45),
     padding: moderateScale(1),
- 
   },
   menuText: {
     width: scale(60),
     height: verticalScale(16),
     fontSize: moderateScale(13),
     marginLeft: scale(4),
+    color: 'black',
+    fontWeight: 'bold',
   },
   menuBox: {
     width: scale(100),

@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   ItemName: {
     fontSize: moderateScale(16),
     fontWeight: 'bold',
+    color: 'black',
   },
 });
 

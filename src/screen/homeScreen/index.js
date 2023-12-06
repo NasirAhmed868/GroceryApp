@@ -8,7 +8,7 @@ import {
   ScrollView,
 } from 'react-native';
 import {scale, verticalScale} from 'react-native-size-matters';
-import Menu from '../../compoents/categoryBox';
+
 import DiscoverdItem from '../../compoents/Discoveryitem';
 
 import styles from './styles';

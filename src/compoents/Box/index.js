@@ -1,7 +1,6 @@
 // Box.js
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-import CategoryBox from '../categoryBox';
 import styles from './styles';
 
 const Box = ({item, index, clickindex, onListItemClick, inventory}) => {

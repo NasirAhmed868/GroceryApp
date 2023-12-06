@@ -103,21 +103,31 @@ const styles = StyleSheet.create({
   textContainer: {
     flex: 1,
     flexDirection: 'column',
-    width: scale(100),
+    width: scale(150),
   },
   scheduledText: {
-    fontSize: moderateScale(14),
-    fontWeight: 'bold',
+    fontSize: 14,
+    fontWeight: '500',
     width: scale(150),
     height: verticalScale(18),
+    color: 'black',
   },
   datestyle: {
-    fontSize: moderateScale(14),
+    fontSize: 14,
     color: 'blue',
+    shadowOffset: {
+      width: scale(0),
+      height: verticalScale(0),
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 0.7,
+    elevation: 3,
+    backgroundColor: 'white',
   },
   monday: {
-    fontSize: moderateScale(14),
+    fontSize: 14,
     fontWeight: '600',
+    color: 'black',
   },
   additionalInfo: {
     flexDirection: 'row',
@@ -125,7 +135,7 @@ const styles = StyleSheet.create({
     marginLeft: scale(20),
   },
   additionalText: {
-    fontSize: moderateScale(14),
+    fontSize: 14,
     color: 'green',
   },
   viewBoxMonday: {

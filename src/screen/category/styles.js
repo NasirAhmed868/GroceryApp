@@ -39,6 +39,8 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(18),
     marginTop: verticalScale(20),
     marginLeft: scale(10),
+    color: 'black',
+    
   },
   searchView: {
     width: scale(40),
@@ -105,11 +107,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    justifyContent: 'space-between',
   },
   searchIcon: {
-    width: scale(20),
-    height: verticalScale(20),
+    width: scale(15),
+    height: verticalScale(15),
   },
   searchBar: {
     fontSize: moderateScale(16),

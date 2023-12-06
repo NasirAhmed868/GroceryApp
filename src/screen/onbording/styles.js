@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     marginTop: verticalScale(40),
     fontSize: moderateScale(18),
     fontWeight: '700',
+    color: 'black',
   },
   backImage: {
     width: scale(420),
@@ -31,6 +32,7 @@ const styles = StyleSheet.create({
   itemName: {
     width: scale(300),
     height: verticalScale(50),
+    color: 'black',
     shadowOffset: {
       width: scale(0),
       height: verticalScale(0),
@@ -49,11 +51,12 @@ const styles = StyleSheet.create({
     marginLeft: 25,
   },
   btnText: {
-    fontSize: 16,
+    fontSize: moderateScale(16),
     fontWeight: '500',
     justifyContent: 'center',
     alignSelf: 'center',
-    marginTop: 15,
+    marginTop: verticalScale(15),
+    color: 'black',
   },
   itemCategory: {
     width: scale(350),
@@ -73,6 +76,7 @@ const styles = StyleSheet.create({
     marginBottom: scale(10),
     fontSize: moderateScale(18),
     fontWeight: '800',
+    color: 'black',
   },
   contianerInventory: {
     backgroundColor: 'yellow',
@@ -108,14 +112,17 @@ const styles = StyleSheet.create({
     marginBottom: verticalScale(10),
     justifyContent: 'center',
     marginLeft: scale(90),
+    color: 'black',
   },
   inventoryItemCount: {
     fontSize: moderateScale(16),
     marginBottom: verticalScale(10),
+    color: 'black',
   },
   inventoryItem: {
     fontSize: moderateScale(14),
     marginBottom: scale(5),
+    color: 'black',
   },
   downArrowContainer: {
     alignItems: 'center',

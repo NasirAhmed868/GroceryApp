@@ -9,7 +9,7 @@ import {
   ImageBackground,
   TextInput,
 } from 'react-native';
-import Box from '../../compoents/Box';
+
 import ItemBox from '../../compoents/itemBox';
 import {Picker} from '@react-native-picker/picker';
 
@@ -20,202 +20,58 @@ const data = [
   {
     id: 1,
     product_name: 'Atta',
-    product_image: require('../../atom/icon/aata.jpg'),
+    product_image: require('../../atom/icon/aata3.jpg'),
     quantity: '25kg quantity in package',
     Price: '50/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 2,
     product_name: 'Rice',
-    product_image: require('../../atom/icon/rice.png'),
+    product_image: require('../../atom/icon/rice3.jpg'),
 
     Price: '120/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Rice',
-        name: 'shabarmati ',
-        Price: '100/kg',
-        quantity: '2kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Rice ',
-        Price: '80/kg',
-        quantity: '5kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 3,
     product_name: 'Oil',
     product_image: require('../../atom/icon/oil.png'),
     Price: '120/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 4,
     product_name: 'Dal',
     product_image: require('../../atom/icon/dal.png'),
     Price: '180/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 5,
     product_name: 'Vegtable',
     product_image: require('../../atom/icon/vegetable.jpg'),
     Price: '80/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 6,
     product_name: 'Milk',
     product_image: require('../../atom/icon/milk.jpg'),
     Price: '60/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 7,
     product_name: 'Dal',
     product_image: require('../../atom/icon/dal.png'),
     Price: '180/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 8,
     product_name: 'Vegtable',
     product_image: require('../../atom/icon/vegetable.jpg'),
     Price: '80/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
   {
     id: 9,
     product_name: 'Milk',
     product_image: require('../../atom/icon/milk.jpg'),
     Price: '60/kg',
-    products: [
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'shabarmati ',
-        Price: '50/kg',
-        quantity: '25kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-      {
-        brandName: 'Aashirvaad Aata',
-        name: 'Manna Atta ',
-        Price: '80/kg',
-        quantity: '50kg quantity in package',
-        product_image: require('../../atom/icon/aata.jpg'),
-      },
-    ],
   },
 ];
 const OnbordingScreen = ({item}) => {
